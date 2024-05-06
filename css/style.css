@@ -476,23 +476,15 @@ p {
   margin: 0;
   padding: 0;
   position: absolute;
+  border-radius: 5px;
 }
 .search__suggestions li {
   display: flex;
   align-items: center;
   list-style-type: none;
-  padding: 0 10px;
+  padding: 15px 10px;
   background-color: #2A1F44;
-  height: 40px;
   cursor: pointer;
-}
-.search__suggestions li:first-child {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-.search__suggestions li:last-child {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 
 .search-form__input-group {
