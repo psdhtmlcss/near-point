@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  padding: 0 15px;
+  width: 100%;
+
+  @media screen and (min-width: $desktop) {
+    width: 994px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,36 @@
+.card-result {
+  border-radius: $brs;
+  border-top: 1px solid $border-color-card;
+  background-color: $bg-card;
+
+  &__container {
+    padding: 15px 10px 10px;
+  }
+
+  h3 {
+    margin-bottom: 15px;
+  }
+
+  &__info {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
+  }
+
+  &__price {
+    margin-bottom: 15px;
+  }
+
+  &__divider {
+    display: inline-flex;
+    align-items: center;
+  }
+}

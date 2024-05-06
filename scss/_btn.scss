@@ -1,0 +1,27 @@
+.btn {
+  height: 51px;
+  border: 0;
+  border-radius: $brs;
+  background-color: transparent;
+  padding: 0 10px;
+  color: $text-color;
+  cursor: pointer;
+  transition: $transition-bg;
+
+  &-primary {
+    border-top: 1px solid $border-color-input;
+    background-color: $primary;
+
+    &:hover {
+      background-color: lighten($primary, 5%);
+    }
+  }
+
+  &-secondary {
+    background-color: $secondary;
+
+    &:hover {
+      background-color: lighten($secondary, 5%);
+    }
+  }
+}

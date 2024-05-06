@@ -1,0 +1,41 @@
+.search {
+
+  &__form-wrapper {
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  &__image {
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  &__suggestions {
+    width: 100%;
+    height: 300px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+
+    li {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+      padding: 0 10px;
+      background-color: $bg-top;
+      height: 40px;
+      cursor: pointer;
+
+      &:first-child {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+
+      &:last-child {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+  }
+}

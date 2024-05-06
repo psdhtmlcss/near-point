@@ -1,0 +1,15 @@
+.heading-block {
+  text-align: center;
+  h1 {
+    margin-bottom: 24px;
+  }
+
+  p {
+    color: $text-color-secondary;
+    font-weight: bold;
+
+    span {
+      font-size: 20px;
+    }
+  }
+}

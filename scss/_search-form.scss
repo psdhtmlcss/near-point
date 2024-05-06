@@ -1,0 +1,27 @@
+.search-form {
+  &__input-group {
+    display: flex;
+  }
+
+  &__form-control {
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-left: 36px;
+    background-image: url("/img/map.svg");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+
+    &:not(:first-child) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  &__btn {
+    width: 51px;
+    flex-shrink: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
