@@ -26,6 +26,10 @@
       padding: 15px 10px;
       background-color: $bg-top;
       cursor: pointer;
+
+      &:hover {
+        background-color: lighten($bg-top, 10%);
+      }
     }
   }
 }

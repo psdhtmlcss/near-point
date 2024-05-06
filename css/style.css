@@ -505,6 +505,9 @@ p {
   background-color: #2A1F44;
   cursor: pointer;
 }
+.search__suggestions li:hover {
+  background-color: #402f67;
+}
 
 .search-form__input-group {
   display: flex;
