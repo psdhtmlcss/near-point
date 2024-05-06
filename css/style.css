@@ -344,6 +344,25 @@ p {
   margin: 0;
 }
 
+.loader {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #FFF;
+  border-bottom-color: #FF5757;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .form-control {
   display: block;
   width: 100%;
@@ -471,7 +490,7 @@ p {
 }
 .search__suggestions {
   width: 100%;
-  height: 300px;
+  max-height: 300px;
   overflow-y: auto;
   margin: 0;
   padding: 0;
@@ -510,9 +529,13 @@ p {
   border-bottom-left-radius: 0;
 }
 
+.search-results {
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (min-width: 768px) {
   .search-results {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 15px;
   }

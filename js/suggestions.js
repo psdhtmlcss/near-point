@@ -15,11 +15,13 @@ const onSuggestionsWrapperClick = (evt) => {
   }
   if (form.dataset.direction === 'from') {
     from.value = evt.target.textContent;
+    form.dataset.from = evt.target.textContent;
     suggestionsWrapper.innerHTML = '';
     return;
   }
   if (form.dataset.direction === 'to') {
     to.value = evt.target.textContent;
+    form.dataset.to = evt.target.textContent;
     suggestionsWrapper.innerHTML = '';
     return;
   }

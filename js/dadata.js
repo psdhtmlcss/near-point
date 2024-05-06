@@ -1,5 +1,7 @@
 import { url, token, form, from, to } from './variables';
 import { renderSuggestions } from './suggestions';
+import { onFormSubmit } from './form';
+import { hideResults } from './results';
 
 const getSuggestions = (query) => {
   const options = {
@@ -34,9 +36,13 @@ to.addEventListener('input', toInput);
 
 from.addEventListener('click', () => {
   form.dataset.direction = 'from';
+  hideResults();
   // To do: scroll to
 });
 to.addEventListener('click', () => {
   form.dataset.direction = 'to';
+  hideResults();
   // To do: scroll to
 });
+
+form.addEventListener('submit', onFormSubmit);
