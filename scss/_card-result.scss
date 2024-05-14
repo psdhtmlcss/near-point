@@ -1,4 +1,7 @@
 .card-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: $brs;
   border-top: 1px solid $border-color-card;
   background-color: $bg-card;
@@ -9,6 +12,21 @@
 
   h3 {
     margin-bottom: 15px;
+  }
+
+  &__sale {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    color: lighten($primary, 10%);
+
+    svg {
+      width: 16px;
+      height: 16px;
+      path {
+        fill: lighten($primary, 10%);
+      }
+    }
   }
 
   &__info {
