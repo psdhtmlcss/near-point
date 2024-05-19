@@ -10,3 +10,10 @@ export const searchIcon = form.querySelector('.js-search-icon');
 // Search results
 export const results = document.querySelector('.js-search-results');
 export const searchImage = document.querySelector('.js-search-image');
+// Call manager
+export const callManagerForm = document.querySelector('.js-call-manager-form');
+export const callManagerPhoneInput = callManagerForm.querySelector('.js-call-manager-phone-input');
+// Mask options
+export const maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};

@@ -621,6 +621,35 @@ p {
   font-size: 16px;
 }
 
+.call-manager {
+  background: linear-gradient(50.97deg, #3C077F 2.28%, #6C0DE5 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 15px 10px;
+}
+.call-manager__form {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.call-manager__input {
+  border-radius: 5px 0 0 5px;
+  background-color: #580ABE;
+  border: 0;
+}
+.call-manager__input:focus {
+  background-color: #42078e;
+}
+.call-manager__button {
+  border-radius: 0 5px 5px 0;
+  background-color: #780DFF;
+  padding: 0;
+  width: 51px;
+  flex-shrink: 0;
+}
+
 .footer {
   padding: 15px 0;
   text-align: center;

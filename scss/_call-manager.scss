@@ -1,0 +1,32 @@
+.call-manager {
+  background: linear-gradient(50.97deg, $info-bottom 2.28%, $info-top 100%);
+  border-top: 1px solid $border-color-card;
+  box-shadow: $box-shadow-card;
+  border-radius: $brs;
+  padding: 15px 10px;
+
+  &__form {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: $box-shadow-card;
+  }
+
+  &__input {
+    border-radius: $brs 0 0 $brs;
+    background-color: $bg-manager-input;
+    border: 0;
+
+    &:focus {
+      background-color: darken($bg-manager-input, 10%);
+    }
+  }
+
+  &__button {
+    border-radius: 0 $brs $brs 0;
+    background-color: $bg-manager-button;
+    padding: 0;
+    width: 51px;
+    flex-shrink: 0;
+  }
+}
