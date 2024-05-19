@@ -609,6 +609,9 @@ p {
   display: inline-flex;
   align-items: center;
 }
+.card-result__call-courier {
+  height: 40px;
+}
 
 .price {
   font-weight: bold;
