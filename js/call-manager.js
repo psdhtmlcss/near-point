@@ -3,10 +3,9 @@ import { callManagerForm, callManagerPhoneInput, maskOptions } from './variables
 
 const mask = IMask(callManagerPhoneInput, maskOptions);
 
-const onCallManagerFormSubmit = (evt) => {
-  evt.preventDefault();
-  callManagerPhoneInput.value = '';
-  alert('Спасибо за заявку! В ближайшее время наш менеджер свяжется с вами.');
-};
+// const onCallManagerFormSubmit = (evt) => {
+//   evt.preventDefault();
+//   callManagerForm.submit();
+// };
 
-callManagerForm.addEventListener('submit', onCallManagerFormSubmit);
+// callManagerForm.addEventListener('submit', onCallManagerFormSubmit);
