@@ -8,6 +8,11 @@
   cursor: pointer;
   transition: $transition-bg;
 
+  &[disabled] {
+    cursor: default;
+    opacity: .5;
+  }
+
   &-primary {
     border-top: 1px solid $border-color-input;
     background-color: $primary;

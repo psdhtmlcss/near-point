@@ -13,6 +13,7 @@ export const searchImage = document.querySelector('.js-search-image');
 // Call manager
 export const callManagerForm = document.querySelector('.js-call-manager-form');
 export const callManagerPhoneInput = callManagerForm.querySelector('.js-call-manager-phone-input');
+export const callManagerButton = callManagerForm.querySelector('.js-call-manager-button');
 // Mask options
 export const maskOptions = {
   mask: '+{7}(000)000-00-00'

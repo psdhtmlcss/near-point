@@ -393,6 +393,10 @@ a {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
+.btn[disabled] {
+  cursor: default;
+  opacity: 0.5;
+}
 .btn-primary {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   background-color: #FF5757;

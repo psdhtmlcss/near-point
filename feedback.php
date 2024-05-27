@@ -1,5 +1,5 @@
 <?php
-  $field_phone = $_GET['Phone'];
+  $field_phone = $_GET['callManagerPhone'];
 
   $mail_to = 'info@dostavka.info';
   $subject = 'Обратный звонок '.$field_phone;

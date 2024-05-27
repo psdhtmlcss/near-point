@@ -1,11 +1,12 @@
 import IMask from 'imask';
-import { callManagerForm, callManagerPhoneInput, maskOptions } from './variables';
+import { callManagerPhoneInput, callManagerButton, maskOptions } from './variables';
 
 const mask = IMask(callManagerPhoneInput, maskOptions);
 
-// const onCallManagerFormSubmit = (evt) => {
-//   evt.preventDefault();
-//   callManagerForm.submit();
-// };
+mask.on('accept', () => {
+  callManagerButton.disabled = true;
+});
 
-// callManagerForm.addEventListener('submit', onCallManagerFormSubmit);
+mask.on('complete', () => {
+  callManagerButton.disabled = false;
+});
